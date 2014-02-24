@@ -1,5 +1,5 @@
 <?php
-require_once('../conf/conf.php');	
+require_once('../conf/conf.php');
 
 $returns = array();
 
@@ -39,6 +39,7 @@ for($postCount=0;isset($_POST['gyomuitakuStaff_'.$postCount])>false;$postCount++
 	}
 	$parsePart2 = implode(',',$parsePart);
 	$parse = explode(',',$parsePart2);
+	$parsed = array();
 
 	if(count($parse) <= 2)
 	{
@@ -109,5 +110,5 @@ for($postCount=0;isset($_POST['gyomuitakuStaff_'.$postCount])>false;$postCount++
 }
 
 
-return require_once(RETTEMP);	
+return require_once(RETTEMP);
 ?>

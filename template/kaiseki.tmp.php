@@ -10,7 +10,7 @@
 <div class="main">
 <div id="staffTab">
 <ul class="tab clear">
-<li class="none"><a href="#" class="allTab" ><div class="companyName">　</div>すべて表示</a></li>
+<li class="none"><a href="#" class="allTab" ><div class="companyName">&nbsp;</div>すべて表示</a></li>
 <?php foreach($returns as $returnNo => $return): ?>
 	<li><a href="#" class="datas<?php echo $returnNo; ?>"><div class="companyName"><?php echo $return['companyInfo']['name']; ?></div><?php echo $return['staffInfo']['nameFull']; ?></a></li>
 <?php endforeach; ?>
