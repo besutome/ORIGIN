@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+html,body
+{
+	height:100%;
+}
+
+textarea
+{
+	width:90%;
+	height:350px;
+	border-radius:10px;
+}
+
+input[type=button],
+input[type=submit]
+{
+	border-radius:20px;
+}
+
+span.ErrorMsg,
+div.ErrorMsg
+{
+	color:red;
+}
+
+select.gyomuitakuStaff
+{
+	font-size: 25px;
+	width:500px;
+}
+
+input.plus
+{
+	font-size:30px;
+}
+
+input.submitSoshin
+{
+	font-size: 30px;
+}
+
+table.sagyohokokusyoTable,
+table.sagyohokokusyoTable td,
+table.kensyuSyoTable,
+table.kensyuSyoTable td
+{
+	border:solid 1px black;
+}
+
+div#kadoReportAll
+{
+	background-color: white;
+	border: medium solid pink;
+	display: none;
+	left: 500px;
+	margin: 103px auto;
+	position: absolute;
+	width: 400px;
+	z-index: 2;
+	border-radius:10px;
+	padding:10px;
+}
+
+div#kadoReportAll span.close
+{
+	cursor: pointer;
+	font-size: 40px;
+	font-weight: bolder;
+	left: 395px;
+	position: absolute;
+	top: -15px;
+	z-index: 3;
+}
+
+div#kadoReportAll span.close:hover
+{
+	color:#00A4C9;
+}
+
+div.fullBlack
+{
+	width:100%;
+	height:100%;
+	display:none;
+	background-color:black;
+	position:absolute;
+	z-index: 1;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	bottom:0;
+	opacity:0.4;
+}
+
+div#data
+{
+	border:2px #ddd solid;
+	margin:0 75px;
+	border-radius:10px;
+}
+
+div.datas
+{
+	background-color:#EDEDED;
+	border:solid 2px #00A4C9;
+	margin:50px;
+	padding:30px;
+	border-radius:60px;
+}
+
+div.staffInfo
+{
+	font-size:18px;
+	font-weight:bolder;
+}
+
+
+
+div#staffTab
+{
+	position:relative;
+	top:2px;
+}
+
+ul.tab {
+	margin: 0 95px;
+	padding: 0;
+	border-bottom: 2px #ddd solid;
+}
+ul.tab li {
+	float: left;
+	margin: 0 0 0 5px;
+	position: relative;
+	bottom: -2px;
+	list-style-type: none;
+	border: 1px #ddd solid;
+	border-top: none;
+	border-bottom: 2px #ddd solid;
+}
+ul.tab li.none {
+	border-bottom: 2px #fff solid;
+	font-weight: bold;
+}
+ul.tab li.none a
+{
+	position: relative;
+	bottom: 6px;
+	cursor:default;
+}
+ul.tab li a {
+	color: #000;
+	display: block;
+	padding: 3px 10px 5px;
+	text-decoration: none;
+	background: #fff;
+	border-top: 5px #00A4C9 solid;
+}
+ul.tab li a:hover {
+	position: relative;
+	bottom: 6px;
+}
+ul.tab li a:active{
+	background-color:#ACC6D7;
+}
+ul.tab li a div.companyName
+{
+	font-size:9px;
+}
+/* clerfix */
+.clear:after {
+    content:"";
+    display:block;
+    overflow:hidden;
+}
+.clear:after {
+    clear:both;
+}
+.clear {
+    zoom:1;
+}
