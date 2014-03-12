@@ -52,6 +52,8 @@ for($postCount=0;isset($_POST['gyomuitakuStaff_'.$postCount])>false;$postCount++
 	foreach($parse as $cellCount => $val)
 	{
 		if($count == 4) $val = str_replace('"', '', $val);
+		if($count == 6) $val = str_replace('h', '', $val);
+		if($count == 7) $val = str_replace('％','',str_replace('%', '', $val));
 		$parsed[$countRow][$count] = $val;
 		$parsed[$countRow][$excelFormat[$count]] = $val;
 		$count++;
