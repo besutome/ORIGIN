@@ -1,6 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# どっかにこれ追加 $ sudo chmod 777 /var/lib/php/session
+
+
 Vagrant.configure("2") do |config|
   config.vm.box = "centos64_ja"
   config.vm.box_url = "https://dl.dropboxusercontent.com/u/3657281/centos64_ja.box"
@@ -8,6 +11,12 @@ Vagrant.configure("2") do |config|
   config.vm.define :web1 do |web|
     web.vm.network :private_network, ip: "192.168.33.14"
   end
+
+#  config.vm.network :forwarded_port, guest: 80, host: 8080
+#  config.vm.provision :shell, :inline => <<-PREPARE
+#    yum -y update
+#    yum install -y httpd
+#    PREPARE
 
   config.vm.synced_folder "../", "/var/www/html/", :create => true, :owner=> 'vagrant', :group=>'vagrant', :mount_options => ['dmode=777,fmode=755']
 
